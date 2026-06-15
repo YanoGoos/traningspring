@@ -9,10 +9,10 @@ import jakarta.validation.constraints.Size;
 import lombok.Data;
 
 /**
- * ユーザー情報 リクエストデータ
- */
+* ユーザー情報 リクエストデータ
+*/
 @Data
-public class UserRequest implements Serializable{
+public class UserRequest implements Serializable {
 	
 	/**
 	 *  名前
@@ -24,7 +24,7 @@ public class UserRequest implements Serializable{
 	/**
 	 *  住所
 	 */
-	@Size(max= 255, message = "住所は255桁以内で入力してください")
+	@Size(max = 255, message = "住所は255桁以内で入力してください")
 	private String address;
 	
 	/**
